@@ -14,6 +14,7 @@ COPY_FILES = []
 
 #
 
+os.system(f'{PYTHON_INTERPRETER_PATH} -m pip install -r requirements.txt')
 for i in REQ_PACKAGES:
     os.system(f'{PYTHON_INTERPRETER_PATH} -m pip install {i}')
 
